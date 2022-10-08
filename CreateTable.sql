@@ -35,7 +35,7 @@ Create table Accounts
 ( 
 	ID INT PRIMARY KEY IDENTITY(1,1),
 	Number Varchar(50) not null,
-	Balance_Overall INT not null,
+	Balance_Overall Float not null,
 	banks_id int references Banks(id),
 	cliens_Id int references Clients(id),
 )
